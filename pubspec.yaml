@@ -1,5 +1,5 @@
 name: kasir_bengkel
-description: "A new Flutter project."
+description: KasirKu Bengkel
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -28,20 +28,25 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  barcode_scanner: ^7.1.2
+  blue_thermal_printer: ^1.2.3
   cloud_firestore: ^6.0.3
   cupertino_icons: ^1.0.8
+  dio: ^5.4.0
   excel: ^4.0.6
   firebase_auth: ^6.1.1
   firebase_core: ^4.2.0
   flutter:
     sdk: flutter
-  flutter_barcode_scanner: ^2.0.0
   get: ^4.7.2
   google_fonts: ^6.3.2
   google_sign_in: ^7.2.0
+  iconsax: ^0.0.8
   image_picker: ^1.2.0
   intl: ^0.20.2
+  lottie: ^2.7.0
   mobile_scanner: ^7.1.3
+  open_file: ^3.3.3
   path_provider: ^2.1.5
   permission_handler: ^12.0.1
   shared_preferences: ^2.5.3

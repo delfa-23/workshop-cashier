@@ -9,6 +9,8 @@ import 'package:kasir_bengkel/pages/signup.dart';
 import 'package:kasir_bengkel/pages/layanan.dart';
 import 'package:kasir_bengkel/pages/struk.dart';
 import 'package:kasir_bengkel/pages/laporan.dart';
+import 'package:kasir_bengkel/pages/splash.dart'; // Tambahkan
+import 'package:kasir_bengkel/pages/getstarted.dart'; // Tambahkan
 import 'firebase_options.dart';
 import 'package:get/get.dart';
 
@@ -26,8 +28,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Kasir Bengkel',
-      initialRoute: '/login',
+      initialRoute: '/splash', // Ganti menjadi splash
       getPages: [
+        GetPage(name: '/splash', page: () => const SplashPage()), // Tambahkan
+        GetPage(name: '/getstarted', page: () => const GetStartedPage()), // Tambahkan
         GetPage(name: '/login', page: () => const LoginPage()),
         GetPage(name: '/signup', page: () => const SignupPage()),
         GetPage(name: '/home', page: () => const HomePage()),
@@ -39,10 +43,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/engineer', page: () => const EngineerPage()),
         GetPage(name: '/history', page: () => const HistoryPage()),
         GetPage(name: '/struk', page: () => const StrukPage()),
-        GetPage(
-          name: '/laporan',
-          page: () => const LaporanPage(),
-        ), // <-- tambahan
+        GetPage(name: '/laporan', page: () => const LaporanPage()),
       ],
     );
   }
